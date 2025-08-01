@@ -1,4 +1,4 @@
-HC1T2 - Tâche 2 : Exemple de fonction pure
+-- HC1T2 - Tâche 2 : Exemple de fonction pure
 -- Fonction pure pour calculer l'aire d'un cercle à partir du rayon
 
 circleArea :: Floating a => a -> a
