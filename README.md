@@ -1,1 +1,0 @@
-# Aly_Haskell_plutus
