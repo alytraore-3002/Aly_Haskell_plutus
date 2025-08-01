@@ -24,8 +24,3 @@ n’a aucun effet de bord.
 Floating a => a -> a rend la fonction générique pour tout type flottant (Float, Double, etc.).
 
 L'aire d’un cercle est donnée par la formule : π × r², soit pi * r ^ 2 en Haskell.
-
-
-Souhaite-tu que je commente chaque ligne ou que je t’aide à tester cela dans GHCi ?
-
-
