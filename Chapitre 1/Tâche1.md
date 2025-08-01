@@ -24,4 +24,4 @@ double x = x * 2 : multiplie l'entrée par 2.
 
 increment x = x + 1 : ajoute 1 à l'entrée.
 
-doubleThenIncrement = increment . double : applique d'abord double, puis increment grâce à la composition.
+doubleThenIncrement = increment . double : applique d'abord double, puis increment grâce à la composition de fonctions
