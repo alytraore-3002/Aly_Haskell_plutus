@@ -1,33 +1,37 @@
 HC1T6 - Tâche 6 : Utilisation de signatures de type
----
 
--- Fonction addNumbers : additionne deux entiers
-
+```haskell
+-- Additionne deux entiers
 addNumbers :: Int -> Int -> Int
 addNumbers x y = x + y
 
--- Exemple d'utilisation
+-- Fonction principale pour tester
 main :: IO ()
 main = do
-    let a = 7
-    let b = 5
-    putStrLn ("La somme de " ++ show a ++ " et " ++ show b ++ " est : " ++ show (addNumbers a b))
+    let x = 3
+    let y = 5
+    putStrLn $ "Nombres: " ++ show x ++ " et " ++ show y
+    putStrLn $ "Somme: " ++ show (addNumbers x y)
+```
 
+### Explications :
 
----
+1. **Fonction `addNumbers`** :
+   - **Signature** : `addNumbers :: Int -> Int -> Int` indique que la fonction prend deux entiers (`Int`) et retourne un entier.
+   - **Définition** : Utilise l'opérateur `+` pour additionner les deux arguments `x` et `y`.
+   - **Pureté** : La fonction est pure, car elle dépend uniquement de ses entrées `x` et `y`, produit toujours le même résultat pour les mêmes entrées, et n'a pas d'effets de bord.
 
-✅ Détails :
+2. **Exemple d'exécution** :
+   - Pour `addNumbers 3 5` :
+     - `3 + 5` donne `8`.
 
-Élément	Description
+Sortie dans la console :
+```
+Nombres: 3 et 5
+Somme: 8
+```
 
-addNumbers	Nom de la fonction
-Int -> Int -> Int	Type : prend deux Int, retourne un Int
-x + y	Addition des deux entiers
-
-
-
----
-
-🔢 Exemple de sortie :
-
-La somme de 7 et 5 est : 12
+### Remarques :
+- **Pureté** : `addNumbers` est pure et ne dépend d'aucun état externe.
+- **Simplicité** : La fonction est concise, utilisant l'opérateur standard `+` de Haskell.
+- **Type `Int`** : La fonction utilise `Int` pour les entiers, mais pourrait être généralisée à `Num a => a -> a -> a` pour d'autres types numériques si nécessaire.
