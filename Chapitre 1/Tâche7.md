@@ -1,36 +1,36 @@
 HC1T7 - Tâche 7 : Conversion Fahrenheit/Celsius
 
----
-
--- Fonction fToC : convertit Fahrenheit en Celsius
-
-fToC :: Floating a => a -> a
+```haskell
+-- Convertit les degrés Fahrenheit en Celsius
+fToC :: Double -> Double
 fToC f = (f - 32) * 5 / 9
 
--- Exemple d'utilisation
+-- Fonction principale pour tester
 main :: IO ()
 main = do
-    let fahrenheit = 98.6
-    let celsius = fToC fahrenheit
-    putStrLn ("Température en Fahrenheit : " ++ show fahrenheit)
-    putStrLn ("Température en Celsius : " ++ show celsius)
+    let tempF = 68.0
+    putStrLn $ "Température en Fahrenheit: " ++ show tempF
+    putStrLn $ "Température en Celsius: " ++ show (fToC tempF)
+```
 
+### Explications :
 
----
+1. **Fonction `fToC`** :
+   - **Signature** : `fToC :: Double -> Double` indique que la fonction prend un nombre à virgule flottante (`Double`) représentant la température en Fahrenheit et retourne la température en Celsius.
+   - **Formule** : La conversion de Fahrenheit en Celsius utilise la formule `(F - 32) * 5/9`, où `F` est la température en Fahrenheit.
+   - **Pureté** : La fonction est pure, car elle dépend uniquement de son argument `f`, produit toujours le même résultat pour la même entrée, et n'a pas d'effets de bord.
 
-✅ Détails :
+2. **Exemple d'exécution** :
+   - Pour `fToC 68.0` :
+     - `(68.0 - 32) * 5 / 9` = `36 * 5 / 9` ≈ `20.0`.
 
-Élément	Description
+Sortie dans la console :
+```
+Température en Fahrenheit: 68.0
+Température en Celsius: 20.0
+```
 
-fToC	Nom de la fonction
-Floating a => a -> a	Type générique (fonctionne avec Float, Double, etc.)
-(f - 32) * 5 / 9	Formule de conversion : (F − 32) × 5⁄9
-
-
-
----
-
-🔢 Exemple de sortie :
-
-Température en Fahrenheit : 98.6
-Température en Celsius : 37.0
+### Remarques :
+- **Pureté** : `fToC` est pure et ne dépend d'aucun état externe.
+- **Simplicité** : La fonction est concise, implémentant directement la formule de conversion.
+- **Type `Double`** : Utilise `Double` pour gérer les températures avec précision, car les conversions impliquent des fractions.
