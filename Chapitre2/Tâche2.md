@@ -1,4 +1,4 @@
-
+HC2T2 - Tâche 2 : Signatures de fonctions
 
 1. **Fonction `add`**
    - **Description** : Prend deux `Int` et retourne leur somme.
