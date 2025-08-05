@@ -1,6 +1,4 @@
-HC3T7 - Tâche avancée 7 : Déterminer la saison en fonction du mois avec des gardes
-
-### Voici la définition de la fonction `season` en Haskell qui détermine la saison correspondant à un mois donné (représenté par un entier de 1 à 12) en utilisant des gardes, suivie des tests demandés.
+HC3T7 - Tâche avancée 7 : Déterminer la saison en fonction du mois avec des garde
 
 ### Code Haskell
 ```haskell
