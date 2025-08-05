@@ -1,7 +1,5 @@
 HC3T4 - Tâche 4 : Calculer l'aire d'un triangle avec la formule de Héron
 
-### Voici la définition de la fonction `triangleArea` en Haskell qui calcule l'aire d'un triangle à partir des longueurs de ses trois côtés (a, b, c) en utilisant la formule de Héron. La fonction utilise une expression `let` pour calculer le demi-périmètre `s` et inclut les tests demandés.
-
 ### Code Haskell
 ```haskell
 triangleArea :: Float -> Float -> Float -> Float
