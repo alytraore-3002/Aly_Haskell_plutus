@@ -1,6 +1,6 @@
 HC2T3 - Tâche 3 : Variables immuables
 
-### En Haskell, les variables sont immuables par défaut, ce qui signifie qu'une fois définies, leurs valeurs ne peuvent pas être modifiées. Je vais définir les variables avec les types spécifiés (`Int`, `Double`, `String`, `Bool`), puis tenter de modifier l'une d'entre elles pour démontrer l'erreur qui en résulte.
+### En Haskell, les variables sont immuables par défaut, ce qui signifie qu'une fois définies, leurs valeurs ne peuvent pas être modifiées. Je vais définir les variables avec les types spécifiés (`Int`, `Double`, `String`, `Bool`), puis tentons de modifier l'une d'entre elles pour démontrer l'erreur qui en résulte.
 
 ### Définition des variables
 
