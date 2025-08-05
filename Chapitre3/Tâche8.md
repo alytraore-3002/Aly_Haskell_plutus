@@ -1,7 +1,5 @@
 HC3T8 - Tâche avancée 8 : Calculer l'IMC et retourner la catégorie avec où
 
-### Voici la définition de la fonction `bmiCategory` en Haskell qui calcule l'Indice de Masse Corporelle (IMC) à partir du poids (en kg) et de la taille (en mètres) en utilisant une clause `where` pour calculer l'IMC, et des gardes pour classifier la catégorie correspondante, suivie des tests demandés.
-
 ### Code Haskell
 ```haskell
 bmiCategory :: Float -> Float -> String
