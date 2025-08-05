@@ -1,7 +1,5 @@
 HC3T9 - Tâche avancée 9 : Trouver le maximum de trois nombres avec let
 
-### Voici la définition de la fonction `maxOfThree` en Haskell qui retourne le maximum de trois nombres entiers en utilisant une clause `let` pour stocker les valeurs intermédiaires maximales, suivie des tests demandés.
-
 ### Code Haskell
 ```haskell
 maxOfThree :: Int -> Int -> Int -> Int
