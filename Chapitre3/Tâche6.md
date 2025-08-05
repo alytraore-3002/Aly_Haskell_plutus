@@ -1,7 +1,5 @@
 HC3T6 - Tâche avancée 6 : Vérifier une année bissextile avec if-then-else
 
-### La fonction `isLeapYear` en Haskell qui détermine si une année est bissextile en utilisant une instruction `if-then-else` selon les règles données, suivie des tests demandés.
-
 ### Code Haskell
 ```haskell
 isLeapYear :: Int -> Bool
