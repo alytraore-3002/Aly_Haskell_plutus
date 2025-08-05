@@ -47,9 +47,3 @@ Si on compile et exécute ce programme avec `testValue = 5` :
 - `double 5` donne `10` (5 * 2).
 - `increment 10` donne `11` (10 + 1).
 - Donc, `doubleThenIncrement 5` retourne `11`.
-
-Sortie dans la console :
-```
-Entrée: 5
-Résultat de doubleThenIncrement: 11
-```
