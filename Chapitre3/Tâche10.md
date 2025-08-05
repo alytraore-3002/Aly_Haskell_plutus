@@ -1,6 +1,6 @@
 HC3T10 - Tâche avancée 10 : Vérifier si une chaîne est un palindrome (récursion, gardes)
 
-### Voici la définition de la fonction `isPalindrome` en Haskell qui vérifie si une chaîne est un palindrome en utilisant des gardes et une approche récursive, suivie des tests demandés.
+### Définition de la fonction `isPalindrome` en Haskell qui vérifie si une chaîne est un palindrome en utilisant des gardes et une approche récursive, suivie des tests.
 
 ### Code Haskell
 ```haskell
