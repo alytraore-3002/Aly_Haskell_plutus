@@ -33,8 +33,7 @@ HC2T2 - Tâche 2 : Signatures de fonctions
      ```
      - Explication : Utilise l'opérateur `++` pour concaténer les chaînes `s1` et `s2`.
 
-### Code complet avec `main`
-Voici le code Haskell complet, incluant les trois fonctions et une fonction `main` qui démontre leur utilisation en affichant des exemples de résultats à l'aide de `putStrLn` et `print` :
+### Code complet 
 
 ```haskell
 add :: Int -> Int -> Int
@@ -57,16 +56,6 @@ main = do
     putStrLn (concatStrings "Hello " "World!")  -- Affiche "Hello, World!"
 ```
 
-### Explications de `main`
-- La fonction `main` est de type `IO ()`, car elle effectue des actions d'entrée/sortie (affichage dans la console).
-- `putStrLn` est utilisé pour afficher des messages descriptifs et le résultat de `concatStrings` (qui est un `String`).
-- `print` est utilisé pour afficher les résultats de `add` (un `Int`) et `isEven` (un `Bool`), car il convertit automatiquement les valeurs non-`String` en chaînes pour l'affichage.
-
-### Exécution
-Pour exécuter ce programme :
-1. Enregistrez le code dans un fichier, par exemple `Main.hs`.
-2. Compilez-le avec `ghc Main.hs` et exécutez le programme généré.
-3. L'exécution produira une sortie comme :
    ```
    Test de la fonction add :
    7
