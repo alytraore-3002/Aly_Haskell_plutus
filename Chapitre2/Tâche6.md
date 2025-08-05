@@ -24,8 +24,6 @@ HC2T6 - Tâche 6 : Comprendre Int vs Integer
 
 ### Code complet
 
-Voici le code Haskell avec les définitions des variables et une fonction `main` pour afficher leurs valeurs :
-
 ```haskell
 smallNumber :: Int
 smallNumber = 2 ^ 62
@@ -113,18 +111,6 @@ main = do
     print ((2 ^ 64) :: Int)  -- Débordement attendu
     putStrLn "Test de 2^64 :: Integer (pour comparaison) :"
     print ((2 ^ 64) :: Integer)
-```
-
-Sortie attendue :
-```
-Valeur de smallNumber (2^62 :: Int) :
-4611686018427387904
-Valeur de bigNumber (2^127 :: Integer) :
-170141183460469231731687303715884105728
-Test de 2^64 :: Int :
-0  -- Débordement, résultat incorrect
-Test de 2^64 :: Integer (pour comparaison) :
-18446744073709551616
 ```
 
 ### Résumé
