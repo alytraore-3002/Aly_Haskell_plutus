@@ -1,7 +1,5 @@
 HC3T5 - Tâche 5 : Déterminer le type d'un triangle avec des gardes
 
-### Voici la définition de la fonction `triangleType` en Haskell qui classifie un triangle selon ses côtés (a, b, c) en utilisant des gardes pour déterminer s'il est équilatéral, isocèle ou scalène, suivie des tests demandés.
-
 ### Code Haskell
 ```haskell
 triangleType :: Float -> Float -> Float -> String
