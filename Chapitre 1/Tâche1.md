@@ -42,8 +42,43 @@ main = do
    - On utilise `putStrLn` pour afficher l'entrée et le résultat de `doubleThenIncrement testValue`.
    - L'expression `show` convertit les valeurs numériques en chaînes pour l'affichage.
 
-### Exemple d'exécution :
-Si on compile et exécute ce programme avec `testValue = 5` :
-- `double 5` donne `10` (5 * 2).
-- `increment 10` donne `11` (10 + 1).
-- Donc, `doubleThenIncrement 5` retourne `11`.
+" ++ show testValue.
+Cette partie de code Haskell, extraite d'un programme principal (`main`), est utilisée pour tester la fonction `doubleThenIncrement` en affichant une valeur d'entrée et son résultat après application de la fonction. Voici une explication ligne par ligne :
+
+```haskell
+let testValue = 5
+putStrLn $ "Entrée: " ++ show testValue
+putStrLn $ "Résultat de doubleThenIncrement: " ++ show (doubleThenIncrement testValue)
+```
+
+### Explication détaillée :
+
+1. **`let testValue = 5`** :
+   - **Contexte** : Cette ligne se trouve dans un bloc `do` de la fonction `main :: IO ()`, qui est une action d'entrée/sortie.
+   - **Rôle** : La déclaration `let` définit une variable locale `testValue` avec la valeur `5` (de type `Int`).
+   - **But** : Cette valeur sera utilisée comme entrée pour tester la fonction `doubleThenIncrement`.
+
+2. **`putStrLn $ "Entrée: " ++ show testValue`** :
+   - **Rôle de `putStrLn`** : La fonction `putStrLn :: String -> IO ()` affiche une chaîne de caractères (`String`) dans la console, suivie d'un saut de ligne.
+   - **Expression `"Entrée: " ++ show testValue`** :
+     - **`"Entrée: "`** : Une chaîne littérale qui sert de libellé pour indiquer ce qui est affiché.
+     - **`++`** : L'opérateur de concaténation de chaînes en Haskell, qui combine deux `String`.
+     - **`show testValue`** : La fonction `show :: Show a => a -> String` convertit `testValue` (ici, l'entier `5`) en une `String` (résultat : `"5"`). Cela est nécessaire, car `putStrLn` attend une `String`, et `testValue` est un `Int`.
+     - Ensemble, `"Entrée: " ++ show testValue` produit la chaîne `"Entrée: 5"`.
+   - **Effet** : `putStrLn` affiche `"Entrée: 5"` dans la console, suivi d'un saut de ligne.
+
+3. **`putStrLn $ "Résultat de doubleThenIncrement: " ++ show (doubleThenIncrement testValue)`** :
+   - **Rôle de `putStrLn`** : Comme ci-dessus, affiche une `String` avec un saut de ligne.
+   - **Expression `"Résultat de doubleThenIncrement: " ++ show (doubleThenIncrement testValue)`** :
+     - **`"Résultat de doubleThenIncrement: "`** : Une chaîne littérale servant de libellé.
+     - **`doubleThenIncrement testValue`** : Applique la fonction `doubleThenIncrement` (définie précédemment comme `increment . double`) à `testValue` (5).
+       - Si `double x = x * 2` et `increment x = x + 1`, alors `doubleThenIncrement 5 = increment (double 5) = increment (10) = 11`.
+     - **`show (doubleThenIncrement testValue)`** : Convertit le résultat `11` (de type `Int`) en `String`, donnant `"11"`.
+     - Ensemble, la concaténation produit `"Résultat de doubleThenIncrement: 11"`.
+   - **Effet** : `putStrLn` affiche `"Résultat de doubleThenIncrement: 11"` dans la console, suivi d'un saut de ligne.
+
+### Rôle de `$` :
+- L'opérateur `$` est utilisé pour éviter des parenthèses. Il a une faible précédence et applique la fonction à gauche (ici, `putStrLn`) à l'expression à droite. Ainsi :
+  - `putStrLn $ expr` est équivalent à `putStrLn (expr)`.
+  - Cela rend le code plus lisible en évitant des parenthèses explicites autour des expressions complexes comme `"Entrée: " ++ show testValue`.
+
