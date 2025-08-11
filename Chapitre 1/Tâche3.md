@@ -1,5 +1,4 @@
 HC1T3 - Tâche 3 : Vérifier si un nombre est supérieur à 18
-Voici une fonction Haskell simple appelée greaterThan18 qui vérifie si un nombre est supérieur à 18 :
 
 ```haskell
 -- Vérifie si un nombre est supérieur à 18
