@@ -1,10 +1,6 @@
 HC2T4 - Tâche 4 : Notation préfixe et infixe
 
-### En Haskell, la notation préfixe et la notation infixe sont deux manières d'écrire des expressions utilisant des opérateurs ou des fonctions. Les opérateurs comme `+`, `*`, et `&&` sont généralement utilisés en notation infixe (entre les arguments), mais peuvent être utilisés en notation préfixe en les entourant de parenthèses. Inversement, les fonctions écrites en préfixe peuvent être converties en infixe en utilisant des backticks (\`).
-
 ### Conversion des expressions en notation préfixe
-
-Les expressions données utilisent la notation infixe. Je vais les réécrire en notation préfixe, où l'opérateur est placé avant les arguments.
 
 1. **5 + 3**
    - **Infixe** : `5 + 3`
@@ -31,8 +27,6 @@ Les expressions données utilisent la notation infixe. Je vais les réécrire en
      - Explication : L'opérateur `&&` devient la fonction `(&&)` en notation préfixe, avec les arguments `True` et `False`. Cette expression évalue à `False`.
 
 ### Conversion des fonctions en notation infixe
-
-Les expressions données sont en notation préfixe (l'opérateur est une fonction suivie des arguments). Je vais les réécrire en notation infixe en utilisant des backticks pour transformer la fonction en opérateur.
 
 1. **(+) 7 2**
    - **Préfixe** : `(+) 7 2`
@@ -62,17 +56,39 @@ Les expressions données sont en notation préfixe (l'opérateur est une fonctio
 
 Pour illustrer ces conversions, voici un programme Haskell avec une fonction `main` qui affiche les résultats des expressions dans les deux notations :
 
-```haskell
+```module Main where
+
 main :: IO ()
 main = do
-    putStrLn "Expressions en notation préfixe :"
-    print ((+) 5 3)          -- Affiche 8
-    print ((*) 10 4)         -- Affiche 40
-    print ((&&) True False)  -- Affiche False
-    putStrLn "Expressions en notation infixe :"
-    print (7 + 2)            -- Affiche 9
-    print (6 * 5)            -- Affiche 30
-    print (True && False)    -- Affiche False
+  -- 1. Conversion de notation infixe vers préfixe
+  putStrLn "1. Expressions en notation infixe et leur équivalent en préfixe :"
+
+  -- Expression : 5 + 3
+  putStrLn "Infixe : 5 + 3"
+  putStrLn $ "Préfixe : (+) 5 3 = " ++ show ((+) 5 3)
+
+  -- Expression : 10 * 4
+  putStrLn "Infixe : 10 * 4"
+  putStrLn $ "Préfixe : (*) 10 4 = " ++ show ((*) 10 4)
+
+  -- Expression : Vrai et Faux (en Haskell, 'et' est &&)
+  putStrLn "Infixe : True && False"
+  putStrLn $ "Préfixe : (&&) True False = " ++ show ((&&) True False)
+
+  -- 2. Conversion de notation préfixe vers infixe
+  putStrLn "\n2. Fonctions en notation préfixe et leur équivalent en infixe :"
+
+  -- Fonction : (+) 7 2
+  putStrLn "Préfixe : (+) 7 2"
+  putStrLn $ "Infixe : 7 + 2 = " ++ show (7 + 2)
+
+  -- Fonction : (*) 6 5
+  putStrLn "Préfixe : (*) 6 5"
+  putStrLn $ "Infixe : 6 * 5 = " ++ show (6 * 5)
+
+  -- Fonction : (&&) True False
+  putStrLn "Préfixe : (&&) True False"
+  putStrLn $ "Infixe : True && False = " ++ show (True && False)
 ```
 
 ### Explications
