@@ -1,7 +1,4 @@
 HC3T3 - Tâche 3 : Convertir une couleur RGB en chaîne hexadécimale avec let
-
-### Définition de la fonction `rgbToHex` en Haskell qui convertit un triplet RGB (trois entiers pour rouge, vert, bleu) en une chaîne hexadécimale, en utilisant des expressions `let` pour former chaque composant couleur en une chaîne hexadécimale à deux caractères. Les résultats sont ensuite concaténés en une seule chaîne.
-
 ### Code Haskell
 ```haskell
 rgbToHex :: (Int, Int, Int) -> String
