@@ -74,4 +74,4 @@ main = do
    - Elle est conçue pour des notes entières. Si des notes décimales (par exemple, 89.5) étaient nécessaires, il faudrait changer la signature en `Float -> String` et ajuster les comparaisons.
 
 ### Résumé
-La fonction `gradeComment` utilise des gardes pour classifier une note entière dans des tranches prédéfinies (90-100, 70-89, 50-69, 0-49) et retourne un commentaire approprié pour chaque tranche, ou `"Note invalide."` pour les valeurs hors plage. Les gardes offrent une structure claire et robuste, garantissant que toutes les entrées possibles sont gérées. La fonction est simple, efficace, et respecte strictement les exigences spécifiées.
+la fonction `gradeComment` utilise des gardes pour classifier une note entière dans des tranches prédéfinies (9La0-100, 70-89, 50-69, 0-49) et retourne un commentaire approprié pour chaque tranche, ou `"Note invalide."` pour les valeurs hors plage. Les gardes offrent une structure claire et robuste, garantissant que toutes les entrées possibles sont gérées. La fonction est simple, efficace, et respecte strictement les exigences spécifiées.
