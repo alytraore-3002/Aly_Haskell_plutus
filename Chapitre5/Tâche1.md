@@ -1,4 +1,4 @@
-HC5T1 
+HC5T1 : Utiliser applyTwice
 
 ### Code Haskell
 
